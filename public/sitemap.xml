@@ -2,46 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/finance/</loc>
+    <loc>http://localhost:1313/site/posts/agent-harness-engineering/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/tags/ai/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/posts/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/tags/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/tags/technology/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/tags/finance/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/history/</loc>
+    <loc>http://localhost:1313/site/tags/history/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/site/posts/alchemy-of-banking/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/alchemy-of-banking/</loc>
-    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/national-reserve-banking-before-the-fed/</loc>
+    <loc>http://localhost:1313/site/posts/national-reserve-banking-before-the-fed/</loc>
     <lastmod>2025-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/financing-during-the-american-civil-war/</loc>
+    <loc>http://localhost:1313/site/posts/financing-during-the-american-civil-war/</loc>
     <lastmod>2025-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/practice-questions-sml/</loc>
+    <loc>http://localhost:1313/site/posts/practice-questions-sml/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/programming/</loc>
+    <loc>http://localhost:1313/site/tags/programming/</loc>
     <lastmod>2025-06-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dutch-national-flag/</loc>
+    <loc>http://localhost:1313/site/posts/dutch-national-flag/</loc>
     <lastmod>2025-06-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/a-programming-question-on-frogs/</loc>
+    <loc>http://localhost:1313/site/posts/a-programming-question-on-frogs/</loc>
     <lastmod>2025-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/site/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/site/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>http://localhost:1313/site/search/</loc>
   </url>
 </urlset>

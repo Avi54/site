@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Technology on Posts</title>
-    <link>http://localhost:1313/tags/technology/</link>
+    <link>http://localhost:1313/site/tags/technology/</link>
     <description>Recent content in Technology on Posts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/site/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agent Harness</title>
-      <link>http://localhost:1313/posts/agent-harness-engineering/</link>
+      <link>http://localhost:1313/site/posts/agent-harness-engineering/</link>
       <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/agent-harness-engineering/</guid>
+      <guid>http://localhost:1313/site/posts/agent-harness-engineering/</guid>
       <description>&lt;p&gt;In his post &lt;a href=&#34;https://addyosmani.com/blog/agent-harness-engineering/&#34;&gt;&amp;ldquo;Agent Harness Engineering&amp;rdquo;&lt;/a&gt;, Addy Osmani argues that conversations about AI coding tools have largely centered on the model itself. This discussion centers on answering questions like which one reasons best or which one writes the ideal code, but according to him, a model on its own is not an agent. It becomes one only once it is given a way to read and write files, run commands, and know when a task is actually finished. Osmani, building on a term coined by Trivedy, refers to this surrounding structure as the harness, which has become a common technical term.&lt;/p&gt;</description>
     </item>
   </channel>
