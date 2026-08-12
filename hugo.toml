@@ -1,0 +1,55 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Posts"
+theme = "PaperMod"
+
+[pagination]
+    pagerSize = 5
+
+[params]
+    env = "production"
+
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = false
+    ShowCodeCopyButtons = true
+    ShowWordCount = false
+    ShowToc = false
+
+    defaultTheme = "auto"
+    disableThemeToggle = false
+
+    ShowSearch = true
+
+    [params.homeInfoParams]
+        Title = "Posts"
+        Content = "My posts will relate to topics on finance, economics, history, literature, or computer science."
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+                enable = true
+
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)'], ['$', '$']]
+
+[[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]

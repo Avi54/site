@@ -1,0 +1,19 @@
+/* Make the homepage more compact */
+
+.first-entry {
+    min-height: auto;
+    margin: var(--gap) 0 var(--gap) 0;
+}
+
+.home-info {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.home-info .entry-content {
+    margin-top: 8px;
+}
+
+.post-entry {
+    margin-bottom: var(--gap);
+}

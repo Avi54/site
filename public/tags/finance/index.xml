@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Finance on Posts</title>
+    <link>http://localhost:1313/tags/finance/</link>
+    <description>Recent content in Finance on Posts</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Goldsmiths&#39; Alchemy: The Origin of Paper Money</title>
+      <link>http://localhost:1313/posts/alchemy-of-banking/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/alchemy-of-banking/</guid>
+      <description>&lt;p&gt;Where did paper money actually come from? In &lt;em&gt;Princes of the Yen&lt;/em&gt;, Richard Werner answers this by tracing it to a simple receipt slip, a piece of paper a medieval goldsmith handed over for gold left in safekeeping. That receipt is principally an ancestor to the bank note, and closely tied to the origins of paper money in Europe.&lt;/p&gt;
+&lt;h2 id=&#34;from-storage-slip-to-money&#34;&gt;From Storage Slip to Money&lt;/h2&gt;
+&lt;p&gt;Goldsmiths had the strongest vaults in town, hence people deposited their gold with them and in exchange were given a receipt as proof of the deposit. Carrying gold around town to settle payments was risky and cumbersome. As a result over time instead of withdrawing gold to make a payment, they just handed over the receipt itself, trusting that whoever received it could redeem it for gold. The receipt began circulating from hand to hand as if it were gold.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>National Banking System before the Federal Reserve</title>
+      <link>http://localhost:1313/posts/national-reserve-banking-before-the-fed/</link>
+      <pubDate>Mon, 30 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/national-reserve-banking-before-the-fed/</guid>
+      <description>&lt;p&gt;Previously I discussed how the North mobilized resources during the American Civil War. Salmon P. Chase did one more thing which led to the establishment of the national banking system in 1863 during the war. The subsequent challenges brought on by the system paved the way for the Fed.&lt;/p&gt;
+&lt;h2 id=&#34;national-banking-system&#34;&gt;National Banking System&lt;/h2&gt;
+&lt;p&gt;Chase returned, for reasons I am yet to explore, to the idea of selling bonds. The bonds sold were of a special class with a 2% interest rate and a provision that these bonds could be used as collateral to allow banks to issue their own bank notes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Financing during the American Civil War</title>
+      <link>http://localhost:1313/posts/financing-during-the-american-civil-war/</link>
+      <pubDate>Sun, 29 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/financing-during-the-american-civil-war/</guid>
+      <description>&lt;p&gt;In American monetary history, the creation of the Federal Reserve stands out as a monumental moment. To truly appreciate the importance and necessity of central banking, it is worth exploring the system that preceded the Fed.
+The period, prior to the Fed, was referred to as the National Banking System (1863-1913). The system was bereft with elasticity among other challenges that ultimately led to the creation of the Fed through the Federal Reserve Act. Before discussing the pre-Fed system I provide the context in which it emerged, namely the American Civil War.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

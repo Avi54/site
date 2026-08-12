@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Answers to Select Practice Programming Questions on SML | Posts</title>
+<meta name="keywords" content="Programming">
+<meta name="description" content="The practice questions were taken from this website.
+Q1
+Write a function alternate : int list -&gt; int\texttt{alternate : int list -&gt; int}alternate : int list -&gt; int that takes a list of numbers and adds them with alternating sign. For example alternate [1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2\texttt{[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2}[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/practice-questions-sml/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9c69bfebcd00a00d91f5693e2b592f0d8c05f7abc414f6612e0e63d505c34d00.css" integrity="sha256-nGm/680AoA2R9Wk&#43;K1kvDYwF96vEFPZhLg5j1QXDTQA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/practice-questions-sml/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css"
+      integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB"
+      crossorigin="anonymous">
+<meta property="og:url" content="http://localhost:1313/posts/practice-questions-sml/">
+  <meta property="og:site_name" content="Posts">
+  <meta property="og:title" content="Answers to Select Practice Programming Questions on SML">
+  <meta property="og:description" content="The practice questions were taken from this website.
+Q1 Write a function alternate : int list -&gt; int\texttt{alternate : int list -&gt; int}alternate : int list -&gt; int that takes a list of numbers and adds them with alternating sign. For example alternate [1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2\texttt{[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2}[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-23T00:00:00+00:00">
+    <meta property="article:tag" content="Programming">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Answers to Select Practice Programming Questions on SML">
+  <meta name="twitter:description" content="The practice questions were taken from this website.
+Q1 Write a function alternate : int list -&gt; int\texttt{alternate : int list -&gt; int}alternate : int list -&gt; int that takes a list of numbers and adds them with alternating sign. For example alternate [1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2\texttt{[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2}[1,2,3,4] = 1 - 2 &#43; 3 - 4 = -2.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Answers to Select Practice Programming Questions on SML",
+      "item": "http://localhost:1313/posts/practice-questions-sml/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Answers to Select Practice Programming Questions on SML",
+  "name": "Answers to Select Practice Programming Questions on SML",
+  "description": "The practice questions were taken from this website.\nQ1 Write a function alternate : int list -\u0026gt; int\\texttt{alternate : int list -\u0026gt; int}alternate : int list -\u0026gt; int that takes a list of numbers and adds them with alternating sign. For example alternate [1,2,3,4] = 1 - 2 + 3 - 4 = -2\\texttt{[1,2,3,4] = 1 - 2 + 3 - 4 = -2}[1,2,3,4] = 1 - 2 + 3 - 4 = -2.\n",
+  "keywords": [
+    "Programming"
+  ],
+  "articleBody": "The practice questions were taken from this website.\nQ1 Write a function alternate : int list -\u003e int\\texttt{alternate : int list -\u003e int}alternate : int list -\u003e int that takes a list of numbers and adds them with alternating sign. For example alternate [1,2,3,4] = 1 - 2 + 3 - 4 = -2\\texttt{[1,2,3,4] = 1 - 2 + 3 - 4 = -2}[1,2,3,4] = 1 - 2 + 3 - 4 = -2.\nfun alternate(ls) = let fun iter([],count,sum) = sum | iter(x::xs,count,sum) = if (count mod 2 = 0) then iter(xs,count + 1,sum + x) else iter(xs,count + 1,sum - x) in iter(ls,0,0) end; Q2 Write a function min_max : int list -\u003e int * int\\texttt{min\\_max : int list -\u003e int * int}min_max : int list -\u003e int * int that takes a non-empty list of numbers, and returns a pair (min, max)\\texttt{(min, max)}(min, max) of the minimum and maximum of the numbers in the list.\nfun min\\_max([]) = raise Fail \"Empty list\" | min\\_max([x]) = (x, x) | min\\_max(x::xs) = let fun helper([], min, max) = (min, max) | helper(x::xs, min, max) = if (x \u003e max) then helper(xs, min, x) else if (x \u003c min) then helper(xs, x, max) else helper(xs, min, max) in helper(xs, x, x) end; Q3 Write a function cumsum : int list -\u003e int list\\texttt{cumsum : int list -\u003e int list}cumsum : int list -\u003e int list that takes a list of numbers and returns a list of the partial sums of those numbers. For example cumsum [1,4,20] = [1,5,25]\\texttt{[1,4,20] = [1,5,25]}[1,4,20] = [1,5,25]\nfun cumsum(ls) = let fun cumhelper([], p) = [] | cumhelper(x::xs, p) = (x + p)::cumhelper(xs, x + p) in cumhelper(ls, 0) end; Q4 Write a function repeat : int list * int list -\u003e int list\\texttt{repeat : int list * int list -\u003e int list}repeat : int list * int list -\u003e int list that given a list of integers and another list of nonnegative integers, repeats the integers in the first list according to the numbers indicated by the second list. For example: repeat ([1,2,3], [4,0,3]) = [1,1,1,1,3,3,3]\nfun repeat([],[]) = [] | repeat(x::xs, y::ys) = let fun iter(x, 0) = [] | iter(x, y) = x::iter(x, y -1) in iter(x, y)@repeat(xs, ys) end; Q5 Write a function any : bool list -\u003e bool\\texttt{any : bool list -\u003e bool}any : bool list -\u003e bool that given a list of booleans returns true if there is at least one of them that is true, otherwise returns false. (If the list is empty it should return false because there is no true.)\nfun any([]) = false | any(x::xs) = if (x = true) then true else any(xs); Q6 Write a function all : bool list -\u003e bool\\texttt{all : bool list -\u003e bool}all : bool list -\u003e bool that given a list of booleans returns true if all of them true, otherwise returns false. (If the list is empty it should return true because there is no false.)\nfun all([]) = true | all(x::xs) = if (x = false) then false else all(xs); Q7 Write a function zip : int list * int list -\u003e int * int\\texttt{zip : int list * int list -\u003e int * int}zip : int list * int list -\u003e int * int that given two lists of integers creates consecutive pairs, and stops when one of the lists is empty. For example: zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]\\texttt{zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]}zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]\nfun zip([], _) = [] | zip(_, []) = [] | zip(x::xs, y::ys) = (x,y)::zip(xs,ys); Q8 Write a version zipRecycle\\texttt{zipRecycle}zipRecycle of zip\\texttt{zip}zip, where when one list is empty it starts recycling from its start until the other list completes. For example: zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) = \\texttt{zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) = }zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) = [(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]\\texttt{[(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]}[(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]\nfun zipRecycle (l1, l2) = let fun recycle ([], ys) = recycle (l1, ys) | recycle (xs, []) = recycle (xs, l2) | recycle (x::xs, y::ys) = (x, y) :: recycle (xs, ys) in recycle (l1, l2) end; Q9 Write a function splitup : int list -\u003e int list * int list\\texttt{splitup : int list -\u003e int list * int list}splitup : int list -\u003e int list * int list that given a list of integers creates two lists of integers, one containing the non-negative entries, the other containing the negative entries. Relative order must be preserved: All non-negative entries must appear in the same order in which they were on the original list, and similarly for the negative entries.\nfun splitup(ls) = let fun rev(ls) = let fun helper([], r) = r | helper(x::xs, r) = helper(xs, x::r) in helper(ls, []) end fun iter([], p, n) = [rev(p), rev(n)] | iter(x::xs, p, n) = if x \u003e= 0 then iter(xs, x::p, n) else iter(xs, p, x::n) in iter(ls, [], []) end; Q10 Write a version splitAt : int list * int -\u003e int list * int list\\texttt{splitAt : int list * int -\u003e int list * int list}splitAt : int list * int -\u003e int list * int list of the previous function that takes an extra “threshold” parameter, and uses that instead of 000 as the separating point for the two resulting lists.\nfun splitat(ls, pivot) = let fun rev(ls) = let fun helper([], r) = r | helper(x::xs, r) = helper(xs, x::r) in helper(ls, []) end fun iter([], p, n, pivot) = [rev(p), rev(n)] | iter(x::xs, p, n, pivot) = if (x \u003e= pivot) then iter(xs, x::p, n, pivot) else iter(xs, p, x::n, pivot) in iter(ls, [], [], pivot) end; Q11 Write a function isAnySorted : int list -\u003e boolean\\texttt{isAnySorted : int list -\u003e boolean}isAnySorted : int list -\u003e boolean, that given a list of integers determines whether the list is sorted in either increasing or decreasing order.\nfun isAnySorted(ls) = let fun asc([], prev) = true | asc(x::xs, prev) = if (x \u003e= prev) then asc(xs, x) else false fun dsc([], prev) = true | dsc(x::xs, prev) = if (x \u003c= prev) then dsc(xs, x) else false in if asc(ls, hd(ls)) then true else dsc(ls, hd(ls)) end; Q12 Write a function sortedMerge : int list * int list -\u003e int list\\texttt{sortedMerge : int list * int list -\u003e int list}sortedMerge : int list * int list -\u003e int list that takes two lists of integers that are each sorted from smallest to largest, and merges them into one sorted list. For example: sortedMerge ([1,4,7], [5,8,9]) = [1,4,5,7,8,9]\\texttt{sortedMerge ([1,4,7], [5,8,9]) = [1,4,5,7,8,9]}sortedMerge ([1,4,7], [5,8,9]) = [1,4,5,7,8,9].\nfun sortedMerge([],l2) = l2 | sortedMerge(l1,[]) = l1 | sortedMerge(x::xs, y::ys) = if (x \u003c= y) then x::sortedMerge(xs, y::ys) else y::sortedMerge(x::xs, ys); Q13 Write a sorting function qsort : int list -\u003e int list\\texttt{qsort : int list -\u003e int list}qsort : int list -\u003e int list that works as follows: Takes the first element out, and uses it as the “threshold” for splitAt\\texttt{splitAt}splitAt. It then recursively sorts the two lists produced by splitAt\\texttt{splitAt}splitAt. Finally it brings the two lists together. (Don’t forget that element you took out, it needs to get back in at some point). You could use sortedMerge for the “bring together” part, but you do not need to as all the numbers in one list are less than all the numbers in the other.\nfun qsort([]) = [] | qsort(p::xs) = let fun split([], l, r) = (l, r) | split(x::xs, l, r) = if (x \u003c= p) then split(xs, x::l, r) else split(xs, l, x::r) val (l, r) = split(xs, [], []) in qsort(l) @ [p] @ qsort(r) end; ",
+  "wordCount" : "1303",
+  "inLanguage": "en",
+  "datePublished": "2025-06-23T00:00:00Z",
+  "dateModified": "2025-06-23T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/practice-questions-sml/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Posts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Posts (Alt + H)">Posts</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Answers to Select Practice Programming Questions on SML
+    </h1>
+    <div class="post-meta">
+
+<span title='2025-06-23 00:00:00 +0000 UTC'>June 23, 2025</span>&nbsp;·&nbsp;<span>7 min</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>The practice questions were taken from this <a href="https://classes.engineering.wustl.edu/cse425s/index.php?title=SML_Practice_Problems_A">website</a>.</p>
+<h3 id="q1">Q1<a hidden class="anchor" aria-hidden="true" href="#q1">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">alternate</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext></mrow><annotation encoding="application/x-tex">\texttt{alternate : int list -&gt; int}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6111em;"></span><span class="mord text"><span class="mord texttt">alternate : int list -&gt; int</span></span></span></span></span> that takes a list of numbers and adds them with alternating sign. For example alternate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">[1,2,3,4]</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext><mtext mathvariant="monospace">1</mtext><mtext> </mtext><mtext mathvariant="monospace">-</mtext><mtext> </mtext><mtext mathvariant="monospace">2</mtext><mtext> </mtext><mtext mathvariant="monospace">+</mtext><mtext> </mtext><mtext mathvariant="monospace">3</mtext><mtext> </mtext><mtext mathvariant="monospace">-</mtext><mtext> </mtext><mtext mathvariant="monospace">4</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext><mtext mathvariant="monospace">-2</mtext></mrow><annotation encoding="application/x-tex">\texttt{[1,2,3,4] = 1 - 2 + 3 - 4 = -2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.1389em;"></span><span class="mord text"><span class="mord texttt">[1,2,3,4] = 1 - 2 + 3 - 4 = -2</span></span></span></span></span>.</p>
+<pre tabindex="0"><code>fun alternate(ls) = 
+  let
+    fun iter([],count,sum) = sum
+      | iter(x::xs,count,sum) = 
+        if (count mod 2 = 0) then iter(xs,count + 1,sum + x)
+	else iter(xs,count + 1,sum - x)
+  in
+    iter(ls,0,0)
+  end;
+</code></pre><h3 id="q2">Q2<a hidden class="anchor" aria-hidden="true" href="#q2">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">min_max</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext></mrow><annotation encoding="application/x-tex">\texttt{min\_max : int list -&gt; int * int}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7063em;vertical-align:-0.0951em;"></span><span class="mord text"><span class="mord texttt">min_max : int list -&gt; int * int</span></span></span></span></span> that takes a non-empty list of numbers, and returns a pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">(min,</mtext><mtext> </mtext><mtext mathvariant="monospace">max)</mtext></mrow><annotation encoding="application/x-tex">\texttt{(min, max)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.1389em;"></span><span class="mord text"><span class="mord texttt">(min, max)</span></span></span></span></span> of the minimum and maximum of the numbers in the list.</p>
+<pre tabindex="0"><code>fun min\_max([]) = raise Fail &#34;Empty list&#34;
+  | min\_max([x]) = (x, x)
+  | min\_max(x::xs) = 
+      let
+        fun helper([], min, max) = (min, max)
+          | helper(x::xs, min, max) = 
+	      if (x &gt; max) then helper(xs, min, x)
+	      else if (x &lt; min) then helper(xs, x, max)
+	      else helper(xs, min, max)
+      in
+        helper(xs, x, x)
+      end;
+</code></pre><h3 id="q3">Q3<a hidden class="anchor" aria-hidden="true" href="#q3">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">cumsum</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{cumsum : int list -&gt; int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6111em;"></span><span class="mord text"><span class="mord texttt">cumsum : int list -&gt; int list</span></span></span></span></span> that takes a list of numbers and returns a list of the partial sums of those numbers. For example cumsum <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">[1,4,20]</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext><mtext mathvariant="monospace">[1,5,25]</mtext></mrow><annotation encoding="application/x-tex">\texttt{[1,4,20] = [1,5,25]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.1389em;"></span><span class="mord text"><span class="mord texttt">[1,4,20] = [1,5,25]</span></span></span></span></span></p>
+<pre tabindex="0"><code>fun cumsum(ls) = 
+  let
+    fun cumhelper([], p) = []
+      | cumhelper(x::xs, p) = (x + p)::cumhelper(xs, x + p) 
+  in
+    cumhelper(ls, 0)
+  end; 
+</code></pre><h3 id="q4">Q4<a hidden class="anchor" aria-hidden="true" href="#q4">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">repeat</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{repeat : int list * int list -&gt; int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">repeat : int list * int list -&gt; int list</span></span></span></span></span> that given a list of integers and another list of nonnegative integers, repeats the integers in the first list according to the numbers indicated by the second list. For example: repeat ([1,2,3], [4,0,3]) = [1,1,1,1,3,3,3]</p>
+<pre tabindex="0"><code>fun repeat([],[]) = []
+  | repeat(x::xs, y::ys) = 
+      let
+        fun iter(x, 0) = []
+          | iter(x, y) = x::iter(x, y -1)
+      in
+        iter(x, y)@repeat(xs, ys)
+      end;
+</code></pre><h3 id="q5">Q5<a hidden class="anchor" aria-hidden="true" href="#q5">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">any</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">bool</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">bool</mtext></mrow><annotation encoding="application/x-tex">\texttt{any : bool list -&gt; bool}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">any : bool list -&gt; bool</span></span></span></span></span> that given a list of booleans returns true if there is at least one of them that is true, otherwise returns false. (If the list is empty it should return false because there is no true.)</p>
+<pre tabindex="0"><code>fun any([]) = false
+  | any(x::xs) = 
+      if (x = true) then true
+      else any(xs);
+</code></pre><h3 id="q6">Q6<a hidden class="anchor" aria-hidden="true" href="#q6">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">all</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">bool</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">bool</mtext></mrow><annotation encoding="application/x-tex">\texttt{all : bool list -&gt; bool}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6111em;"></span><span class="mord text"><span class="mord texttt">all : bool list -&gt; bool</span></span></span></span></span> that given a list of booleans returns true if all of them true, otherwise returns false. (If the list is empty it should return true because there is no false.)</p>
+<pre tabindex="0"><code>fun all([]) = true
+  | all(x::xs) = 
+      if (x = false) then false
+      else all(xs); 
+</code></pre><h3 id="q7">Q7<a hidden class="anchor" aria-hidden="true" href="#q7">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">zip</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext></mrow><annotation encoding="application/x-tex">\texttt{zip : int list * int list -&gt; int * int}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">zip : int list * int list -&gt; int * int</span></span></span></span></span> that given two lists of integers creates
+consecutive pairs, and stops when one of the lists is empty.
+For example: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">zip</mtext><mtext> </mtext><mtext mathvariant="monospace">([1,2,3],</mtext><mtext> </mtext><mtext mathvariant="monospace">[4,</mtext><mtext> </mtext><mtext mathvariant="monospace">6])</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext><mtext mathvariant="monospace">[(1,4),</mtext><mtext> </mtext><mtext mathvariant="monospace">(2,6)]</mtext></mrow><annotation encoding="application/x-tex">\texttt{zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9167em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">zip ([1,2,3], [4, 6]) = [(1,4), (2,6)]</span></span></span></span></span></p>
+<pre tabindex="0"><code>fun zip([], _) = []
+  | zip(_, []) = []
+  | zip(x::xs, y::ys) = 
+     (x,y)::zip(xs,ys);
+</code></pre><h3 id="q8">Q8<a hidden class="anchor" aria-hidden="true" href="#q8">#</a></h3>
+<p>Write a version <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">zipRecycle</mtext></mrow><annotation encoding="application/x-tex">\texttt{zipRecycle}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">zipRecycle</span></span></span></span></span> of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">zip</mtext></mrow><annotation encoding="application/x-tex">\texttt{zip}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">zip</span></span></span></span></span>, where when one list is empty it starts recycling from its start until the other list completes. For example: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">zipRecycle</mtext><mtext> </mtext><mtext mathvariant="monospace">([1,2,3],</mtext><mtext> </mtext><mtext mathvariant="monospace">[1,</mtext><mtext> </mtext><mtext mathvariant="monospace">2,</mtext><mtext> </mtext><mtext mathvariant="monospace">3,</mtext><mtext> </mtext><mtext mathvariant="monospace">4,</mtext><mtext> </mtext><mtext mathvariant="monospace">5,</mtext><mtext> </mtext><mtext mathvariant="monospace">6,</mtext><mtext> </mtext><mtext mathvariant="monospace">7])</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext></mrow><annotation encoding="application/x-tex">\texttt{zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) = }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9167em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">zipRecycle ([1,2,3], [1, 2, 3, 4, 5, 6, 7]) = </span></span></span></span></span>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">[(1,1),</mtext><mtext> </mtext><mtext mathvariant="monospace">(2,2),</mtext><mtext> </mtext><mtext mathvariant="monospace">(3,</mtext><mtext> </mtext><mtext mathvariant="monospace">3),</mtext><mtext> </mtext><mtext mathvariant="monospace">(1,4),</mtext><mtext> </mtext><mtext mathvariant="monospace">(2,5),</mtext><mtext> </mtext><mtext mathvariant="monospace">(3,6),</mtext><mtext> </mtext><mtext mathvariant="monospace">(1,7)]</mtext></mrow><annotation encoding="application/x-tex">\texttt{[(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.1389em;"></span><span class="mord text"><span class="mord texttt">[(1,1), (2,2), (3, 3), (1,4), (2,5), (3,6), (1,7)]</span></span></span></span></span></p>
+<pre tabindex="0"><code>fun zipRecycle (l1, l2) =
+  let
+    fun recycle ([], ys) = recycle (l1, ys)
+      | recycle (xs, []) = recycle (xs, l2)
+      | recycle (x::xs, y::ys) = (x, y) :: recycle (xs, ys)
+  in
+    recycle (l1, l2)
+  end;
+</code></pre><h3 id="q9">Q9<a hidden class="anchor" aria-hidden="true" href="#q9">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">splitup</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{splitup : int list -&gt; int list * int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">splitup : int list -&gt; int list * int list</span></span></span></span></span> that given a list of integers creates two lists of integers, one containing the non-negative entries, the other containing the negative entries. Relative order must be preserved: All non-negative entries must appear in the same order in which they were on the original list, and similarly for the negative entries.</p>
+<pre tabindex="0"><code>fun splitup(ls) =
+  let
+    fun rev(ls) =
+      let
+        fun helper([], r) = r
+          | helper(x::xs, r) = helper(xs, x::r)
+      in
+        helper(ls, [])
+      end
+
+    fun iter([], p, n) = [rev(p), rev(n)]
+      | iter(x::xs, p, n) =
+          if x &gt;= 0 then iter(xs, x::p, n)
+          else iter(xs, p, x::n)
+  in
+    iter(ls, [], [])
+  end;
+</code></pre><h3 id="q10">Q10<a hidden class="anchor" aria-hidden="true" href="#q10">#</a></h3>
+<p>Write a version <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">splitAt</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{splitAt : int list * int -&gt; int list * int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">splitAt : int list * int -&gt; int list * int list</span></span></span></span></span> of the previous function that takes an extra &ldquo;threshold&rdquo; parameter, and uses that instead of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> as the separating point for the two resulting lists.</p>
+<pre tabindex="0"><code>fun splitat(ls, pivot) =
+  let
+    fun rev(ls) =
+      let
+        fun helper([], r) = r
+          | helper(x::xs, r) = helper(xs, x::r)
+      in
+        helper(ls, [])
+      end
+
+    fun iter([], p, n, pivot) = [rev(p), rev(n)]
+      | iter(x::xs, p, n, pivot) =
+          if (x &gt;= pivot) then iter(xs, x::p, n, pivot)
+          else iter(xs, p, x::n, pivot)
+  in
+    iter(ls, [], [], pivot)
+  end;
+</code></pre><h3 id="q11">Q11<a hidden class="anchor" aria-hidden="true" href="#q11">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">isAnySorted</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">boolean</mtext></mrow><annotation encoding="application/x-tex">\texttt{isAnySorted : int list -&gt; boolean}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">isAnySorted : int list -&gt; boolean</span></span></span></span></span>, that given a list of integers determines whether the list is sorted in either increasing or decreasing order.</p>
+<pre tabindex="0"><code>fun isAnySorted(ls) = 
+  let
+    fun asc([], prev) = true
+      | asc(x::xs, prev) = 
+          if (x &gt;= prev) then asc(xs, x)
+	  else false
+    
+    fun dsc([], prev) = true
+      | dsc(x::xs, prev) = 
+          if (x &lt;= prev) then dsc(xs, x)
+	  else false
+  in
+    if asc(ls, hd(ls)) then true
+    else dsc(ls, hd(ls))
+  end;
+</code></pre><h3 id="q12">Q12<a hidden class="anchor" aria-hidden="true" href="#q12">#</a></h3>
+<p>Write a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sortedMerge</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">*</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{sortedMerge : int list * int list -&gt; int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sortedMerge : int list * int list -&gt; int list</span></span></span></span></span> that takes two lists of integers that are each sorted from smallest to largest, and merges them into one sorted list. For example: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sortedMerge</mtext><mtext> </mtext><mtext mathvariant="monospace">([1,4,7],</mtext><mtext> </mtext><mtext mathvariant="monospace">[5,8,9])</mtext><mtext> </mtext><mtext mathvariant="monospace">=</mtext><mtext> </mtext><mtext mathvariant="monospace">[1,4,5,7,8,9]</mtext></mrow><annotation encoding="application/x-tex">\texttt{sortedMerge ([1,4,7], [5,8,9]) = [1,4,5,7,8,9]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9167em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sortedMerge ([1,4,7], [5,8,9]) = [1,4,5,7,8,9]</span></span></span></span></span>.</p>
+<pre tabindex="0"><code>fun sortedMerge([],l2) = l2
+  | sortedMerge(l1,[]) = l1
+  | sortedMerge(x::xs, y::ys) = 
+      if (x &lt;= y) then x::sortedMerge(xs, y::ys)
+      else y::sortedMerge(x::xs, ys);
+</code></pre><h3 id="q13">Q13<a hidden class="anchor" aria-hidden="true" href="#q13">#</a></h3>
+<p>Write a sorting function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">qsort</mtext><mtext> </mtext><mtext mathvariant="monospace">:</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext><mtext> </mtext><mtext mathvariant="monospace">-&gt;</mtext><mtext> </mtext><mtext mathvariant="monospace">int</mtext><mtext> </mtext><mtext mathvariant="monospace">list</mtext></mrow><annotation encoding="application/x-tex">\texttt{qsort : int list -&gt; int list}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">qsort : int list -&gt; int list</span></span></span></span></span> that works as follows: Takes the first element out, and uses it as the &ldquo;threshold&rdquo; for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">splitAt</mtext></mrow><annotation encoding="application/x-tex">\texttt{splitAt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">splitAt</span></span></span></span></span>. It then recursively sorts the two lists produced by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">splitAt</mtext></mrow><annotation encoding="application/x-tex">\texttt{splitAt}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">splitAt</span></span></span></span></span>. Finally it brings the two lists together. (Don&rsquo;t forget that element you took out, it needs to get back in at some point). You could use sortedMerge for the &ldquo;bring together&rdquo; part, but you do not need to as all the numbers in one list are less than all the numbers in the other.</p>
+<pre tabindex="0"><code>fun qsort([]) = []
+  | qsort(p::xs) = 
+      let
+        fun split([], l, r) = (l, r)
+	  | split(x::xs, l, r) = 
+	      if (x &lt;= p) then split(xs, x::l, r)
+	      else split(xs, l, x::r)
+
+        val (l, r) = split(xs, [], [])
+      in
+        qsort(l) @ [p] @ qsort(r)
+      end;
+</code></pre>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/programming/">Programming</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/posts/financing-during-the-american-civil-war/">
+    <span class="title">« Prev</span>
+    <span>Financing during the American Civil War</span>
+  </a>
+  <a class="next" href="http://localhost:1313/posts/dutch-national-flag/">
+    <span class="title">Next »</span>
+    <span>A Solution to the Dutch National Flag problem</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
