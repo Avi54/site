@@ -6,8 +6,17 @@
     <description>Recent content in Finance on Posts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/site/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firm Foundations and Castles in the Air</title>
+      <link>http://localhost:1313/site/posts/random-walk-down-wall-street/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/site/posts/random-walk-down-wall-street/</guid>
+      <description>&lt;p&gt;In the opening chapter of &lt;em&gt;A Random Walk Down Wall Street&lt;/em&gt;, Malkiel classifies nearly every approach to stock valuation as falling under one of two competing theories: the firm-foundation theory and the castle-in-the-air theory. He treats the two as close to mutually exclusive, and argues that understanding the gap between them is a prerequisite for avoiding serious investing mistakes.&lt;/p&gt;
+&lt;h2 id=&#34;the-firm-foundation-theory&#34;&gt;The Firm-Foundation Theory&lt;/h2&gt;
+&lt;p&gt;The firm-foundation theory holds that every stock has an intrinsic value, anchored to the underlying business, which a careful analyst can estimate from present conditions and future prospects. When the market price drifts away from that anchor, the theory says, it eventually snaps back, so the investor&amp;rsquo;s job is simply to compare price against calculated value and act on the gap. In modern terms, this is often referred to as reversion to the mean, and the intrinsic value is calculated by discounting future cash flows into present value. In other words, a dollar promised next year is worth less than a dollar today.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Goldsmiths&#39; Alchemy: The Origin of Paper Money</title>
       <link>http://localhost:1313/site/posts/alchemy-of-banking/</link>

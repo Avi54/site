@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/site/tags/finance/</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/posts/random-walk-down-wall-street/</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/posts/</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site/tags/</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/site/posts/agent-harness-engineering/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/site/tags/ai/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/site/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/site/posts/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/site/tags/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/site/tags/technology/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/site/tags/finance/</loc>
-    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/site/tags/history/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
@@ -46,8 +49,6 @@
   </url><url>
     <loc>http://localhost:1313/site/posts/a-programming-question-on-frogs/</loc>
     <lastmod>2025-06-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/site/posts/random-walk-down-wall-street/</loc>
   </url><url>
     <loc>http://localhost:1313/site/about/</loc>
   </url><url>
