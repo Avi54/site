@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=site/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate | Posts</title>
+<meta name="keywords" content="Finance">
+<meta name="description" content="In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from 4.18%4.18\%4.18% at the start of 2026 to 4.75%4.75\%4.75% by the end of August. However, the S&amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/site/posts/interest-rates/">
+<link crossorigin="anonymous" href="/site/assets/css/stylesheet.9c69bfebcd00a00d91f5693e2b592f0d8c05f7abc414f6612e0e63d505c34d00.css" integrity="sha256-nGm/680AoA2R9Wk&#43;K1kvDYwF96vEFPZhLg5j1QXDTQA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/site/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/site/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/site/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/site/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/site/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/site/posts/interest-rates/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css"
+      integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB"
+      crossorigin="anonymous">
+<meta property="og:url" content="http://localhost:1313/site/posts/interest-rates/">
+  <meta property="og:site_name" content="Posts">
+  <meta property="og:title" content="Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate">
+  <meta property="og:description" content="In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from 4.18%4.18\%4.18% at the start of 2026 to 4.75%4.75\%4.75% by the end of August. However, the S&amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-09-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-09-19T00:00:00+00:00">
+    <meta property="article:tag" content="Finance">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate">
+  <meta name="twitter:description" content="In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from 4.18%4.18\%4.18% at the start of 2026 to 4.75%4.75\%4.75% by the end of August. However, the S&amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/site/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate",
+      "item": "http://localhost:1313/site/posts/interest-rates/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate",
+  "name": "Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate",
+  "description": "In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from 4.18%4.18\\%4.18% at the start of 2026 to 4.75%4.75\\%4.75% by the end of August. However, the S\u0026amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.\n",
+  "keywords": [
+    "Finance"
+  ],
+  "articleBody": "In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from 4.18%4.18\\%4.18% at the start of 2026 to 4.75%4.75\\%4.75% by the end of August. However, the S\u0026P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.\nDifferences between Stocks and Bonds The effect of higher rates on bonds is direct. The coupon is fixed when the bond is issued, so a higher discount rate lowers the present value and nothing beyond that changes.\nA stock is different because its cash flows are what the business has left after running its operations, and those move with the economy that rates respond to. He identifies three channels. The first is revenue, which depends on why rates rose (inflation or higher real rates) and on how much pricing power the firm has to pass inflation on. The second is earnings, through the effect of rates on input costs, operating costs and interest expense. The third is reinvestment. When real rates rise, fewer projects clear the required return, so firms invest less. That raises near-term cash flow at the expense of future growth.\nA simple perpetuity-growth example illustrates this.\nPV=Cr−gPV = \\frac{C}{r - g}PV=r−gC​ PV=C8%−3%=C5%PV = \\frac{C}{8 \\% - 3 \\%} = \\frac{C}{5 \\%}PV=8%−3%C​=5%C​where CCC is next year’s cash flow, rrr is the discount rate, and ggg is the growth rate.\nWith r=8%r = 8 \\%r=8% and g=3%g = 3 \\%g=3%, value is 20 times cash flow. If real rates rise and rrr goes to 9%9\\%9% with no change in ggg, value falls to about 16.716.716.7 times, roughly 17%17 \\%17% lower. If the rise is inflation-driven and the firm passes it through fully, rrr goes to 9%9 \\%9% and ggg goes to 4%4 \\%4%. The gap is still 5%5 \\%5%, so value is unchanged. The discount rate rose by the same amount in both cases, but one lowers value by about 17% and the other leaves it unchanged.\nFor this reason, Damodaran sorts companies into three groups. A company is hurt when the higher discount rate outweighs any change in its cash flows, so its value falls. It is unaffected when the two effects cancel out. It is helped when its cash flows rise by more than enough to offset the higher discount rate, so its value goes up. In the example above, the first firm is hurt and the second is unaffected. The market’s overall reaction depends on which group dominates, and risk premiums also shift when rates move. The perpetuity-growth model is a simplification, since real firms’ growth is not perfectly tied to inflation, but the direction of the argument holds.\nDaily Sensitivity Versus the Full Year To test the effect directly, he looked at the 169 trading days from January to the end of August. The 10-year yield rose on 84, fell on 73, and was unchanged on 12. On average, the S\u0026P 500 fell almost half a percent on days when the yield rose by more than 3 basis points, and rose about half a percent on days when it fell by more than that. So stocks clearly react to yields in the short run, at least for larger moves.\nOver the full period, stocks still rose because expected earnings did. Analysts raised their S\u0026P 500 earnings estimates for both 2026 and 2027 by more than 11%11\\%11% during the first eight months. In discount-rate terms, higher rates weighed on stocks on the days yields rose, and rising cash flow estimates more than offset that over the full period.\nThere are two caveats worth considering. First, the daily comparison is descriptive. Yields rise on some days because of strong growth news and on others because of inflation news, and the post does not separate them, so the half-percent figures blend both. Second, the resilience is concentrated. The aggregate tech sector returned 25.22%25.22\\%25.22%, while the median tech company returned 7.75%7.75\\%7.75%.\nReferences Damodaran, Aswath. “Interest Rates and Stock Prices: An Old Debate Flares up!” Musings on Markets, September 10, 2026. https://aswathdamodaran.blogspot.com/2026/09/interest-rates-and-stock-prices-old.html\n",
+  "wordCount" : "700",
+  "inLanguage": "en",
+  "datePublished": "2026-09-19T00:00:00Z",
+  "dateModified": "2026-09-19T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/site/posts/interest-rates/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Posts",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/site/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/site/" accesskey="h" title="Posts (Alt + H)">Posts</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/site/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/site/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/site/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-09-19 00:00:00 +0000 UTC'>September 19, 2026</span>&nbsp;·&nbsp;<span>4 min</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><p>In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.18</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">4.18\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">4.18%</span></span></span></span> at the start of 2026 to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.75</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">4.75\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">4.75%</span></span></span></span> by the end of August. However, the S&amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.</p>
+<h2 id="differences-between-stocks-and-bonds">Differences between Stocks and Bonds<a hidden class="anchor" aria-hidden="true" href="#differences-between-stocks-and-bonds">#</a></h2>
+<p>The effect of higher rates on bonds is direct. The coupon is fixed when the bond is issued, so a higher discount rate lowers the present value and nothing beyond that changes.</p>
+<p>A stock is different because its cash flows are what the business has left after running its operations, and those move with the economy that rates respond to. He identifies three channels. The first is revenue, which depends on why rates rose (inflation or higher real rates) and on how much pricing power the firm has to pass inflation on. The second is earnings, through the effect of rates on input costs, operating costs and interest expense. The third is reinvestment. When real rates rise, fewer projects clear the required return, so firms invest less. That raises near-term cash flow at the expense of future growth.</p>
+<p>A simple perpetuity-growth example illustrates this.</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mi>C</mi><mrow><mi>r</mi><mo>−</mo><mi>g</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">PV = \frac{C}{r - g}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.2408em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><p>
+</p>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mi>C</mi><mrow><mn>8</mn><mi mathvariant="normal">%</mi><mo>−</mo><mn>3</mn><mi mathvariant="normal">%</mi></mrow></mfrac><mo>=</mo><mfrac><mi>C</mi><mrow><mn>5</mn><mi mathvariant="normal">%</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">PV = \frac{C}{8 \% - 3 \%} = \frac{C}{5 \%}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">P</span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.1297em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">8%</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">3%</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:2.1019em;vertical-align:-0.7416em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">5%</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7416em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><p>where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span> is next year&rsquo;s cash flow, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span> is the discount rate, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span></span></span></span> is the growth rate.</p>
+<p>With <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>8</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">r = 8 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">8%</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>3</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">g = 3 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">3%</span></span></span></span>, value is 20 times cash flow. If real rates rise and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span> goes to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">9\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">9%</span></span></span></span> with no change in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span></span></span></span>, value falls to about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16.7</mn></mrow><annotation encoding="application/x-tex">16.7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.6444em;"></span><span class="mord">16.7</span></span></span></span> times, roughly <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">17 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">17%</span></span></span></span> lower. If the rise is inflation-driven and the firm passes it through fully, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span> goes to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">9 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">9%</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span></span></span></span> goes to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">4 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">4%</span></span></span></span>. The gap is still <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">5 \%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">5%</span></span></span></span>, so value is unchanged. The discount rate rose by the same amount in both cases, but one lowers value by about 17% and the other leaves it unchanged.</p>
+<p>For this reason, Damodaran sorts companies into three groups. A company is hurt when the higher discount rate outweighs any change in its cash flows, so its value falls. It is unaffected when the two effects cancel out. It is helped when its cash flows rise by more than enough to offset the higher discount rate, so its value goes up. In the example above, the first firm is hurt and the second is unaffected. The market&rsquo;s overall reaction depends on which group dominates, and risk premiums also shift when rates move. The perpetuity-growth model is a simplification, since real firms&rsquo; growth is not perfectly tied to inflation, but the direction of the argument holds.</p>
+<h2 id="daily-sensitivity-versus-the-full-year">Daily Sensitivity Versus the Full Year<a hidden class="anchor" aria-hidden="true" href="#daily-sensitivity-versus-the-full-year">#</a></h2>
+<p>To test the effect directly, he looked at the 169 trading days from January to the end of August. The 10-year yield rose on 84, fell on 73, and was unchanged on 12. On average, the S&amp;P 500 fell almost half a percent on days when the yield rose by more than 3 basis points, and rose about half a percent on days when it fell by more than that. So stocks clearly react to yields in the short run, at least for larger moves.</p>
+<p>Over the full period, stocks still rose because expected earnings did. Analysts raised their S&amp;P 500 earnings estimates for both 2026 and 2027 by more than <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">11\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">11%</span></span></span></span> during the first eight months. In discount-rate terms, higher rates weighed on stocks on the days yields rose, and rising cash flow estimates more than offset that over the full period.</p>
+<p>There are two caveats worth considering. First, the daily comparison is descriptive. Yields rise on some days because of strong growth news and on others because of inflation news, and the post does not separate them, so the half-percent figures blend both. Second, the resilience is concentrated. The aggregate tech sector returned <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25.22</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">25.22\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">25.22%</span></span></span></span>, while the median tech company returned <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7.75</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">7.75\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="katex-base"><span class="katex-strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">7.75%</span></span></span></span>.</p>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<p>Damodaran, Aswath. &ldquo;Interest Rates and Stock Prices: An Old Debate Flares up!&rdquo; <em>Musings on Markets</em>, September 10, 2026. <a href="https://aswathdamodaran.blogspot.com/2026/09/interest-rates-and-stock-prices-old.html">https://aswathdamodaran.blogspot.com/2026/09/interest-rates-and-stock-prices-old.html</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/site/tags/finance/">Finance</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/site/posts/random-walk-down-wall-street/">
+    <span class="title">Next »</span>
+    <span>Firm Foundations and Castles in the Air</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+
+    
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

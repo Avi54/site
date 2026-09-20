@@ -6,8 +6,15 @@
     <description>Recent content in Finance on Posts</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/site/tags/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Higher Rates, Resilient Stocks and the Cash Flow Side of the Discount Rate</title>
+      <link>http://localhost:1313/site/posts/interest-rates/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/site/posts/interest-rates/</guid>
+      <description>&lt;p&gt;In a September 2026 post, Aswath Damodaran revisits how higher interest rates affect stock prices. He writes in the context of long-term Treasury yields at levels not seen in twenty years. The 10-year moved from &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;4.18&lt;/mn&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;%&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;4.18\%&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;katex-base&#34;&gt;&lt;span class=&#34;katex-strut&#34; style=&#34;height:0.8056em;vertical-align:-0.0556em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4.18%&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; at the start of 2026 to &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;4.75&lt;/mn&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;%&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;4.75\%&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;katex-base&#34;&gt;&lt;span class=&#34;katex-strut&#34; style=&#34;height:0.8056em;vertical-align:-0.0556em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4.75%&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; by the end of August. However, the S&amp;amp;P 500 and Nasdaq both rose strongly over the same eight months. Two ideas from his post are summarized here to explain how both can hold at once.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Firm Foundations and Castles in the Air</title>
       <link>http://localhost:1313/site/posts/random-walk-down-wall-street/</link>
